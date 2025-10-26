@@ -19,12 +19,8 @@
   <body>
     <header class="header">
       <div class="container">
-        <a href="./index.html"
-          ><img
-            src="./images/logo.png"
-            width="200"
-            height="40"
-            class="header__logo"
+        <a href="./index.html" class="header__logo"
+          ><img src="./images/logo.png" width="200" height="40"
         /></a>
         <nav class="navigation">
           <ul class="navigation__list">
@@ -92,7 +88,7 @@
       <section class="content__section1">
         <div class="container">
           <img src="./images/content-image-02.png" width="348" height="472" />
-          <div>
+          <div class="content__section1--block">
             <h2 class="content__section1--title">Subscription index</h2>
             <p class="content__section1--text">
               A daily dataset to keep you up to date on subscription market
@@ -105,7 +101,7 @@
 
       <section class="content__section2">
         <div class="container">
-          <div>
+          <div class="content__section2--block">
             <h2 class="content__section2--title">In-depth metrics</h2>
             <p class="content__section2--text">
               Accurate, real-time reporting at your fingertips. Getting data has
@@ -153,14 +149,14 @@
             <h2 class="choice__top--title">
               Get the right plan for future product.
             </h2>
-            <div class="choice__buttons">
-              <button class="year">Yearly</button>
-              <button class="month">Monthly</button>
-            </div>
+            <ul class="choice__buttons">
+              <li><button class="year">Yearly</button></li>
+              <li><button class="month">Monthly</button></li>
+            </ul>
           </div>
           <ul class="choice__list">
             <li class="choice__1 left">
-              <h4 class="choice__1--h4">Starter</h4>
+              <p class="choice__1--p">Starter</p>
               <h3 class="choice__1--h3">Free</h3>
               <ul class="choice__1--features">
                 <li>1 Website</li>
@@ -170,7 +166,7 @@
               <button class="choice__1--button">Get started</button>
             </li>
             <li class="choice__2">
-              <h4 class="choice__2--h4">Premium</h4>
+              <p class="choice__2--p">Premium</p>
               <h3 class="choice__2--h3">$29<span>/month</span></h3>
               <ul class="choice__2--features">
                 <li>10 Website</li>
@@ -180,7 +176,7 @@
               <button class="choice__2--button">Get started</button>
             </li>
             <li class="choice__1 right">
-              <h4 class="choice__1--h4">Enterprise</h4>
+              <p class="choice__1--p">Enterprise</p>
               <h3 class="choice__1--h3">$49<span>/month</span></h3>
               <ul class="choice__1--features">
                 <li>Unlimited Website</li>
