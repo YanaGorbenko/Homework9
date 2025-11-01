@@ -1,0 +1,50 @@
+@media (max-width: 992px) {
+  .container {
+    max-width: 992px;
+  }
+  .hero__img {
+    @include size(500px, 516px);
+  }
+  .header__logo {
+    margin-right: 124px;
+  }
+  .header__button {
+    margin-right: 0;
+    width: 158px;
+  }
+  .navigation {
+    margin-right: 130px;
+  }
+  .logos__list {
+    column-gap: 180px;
+    row-gap: 60px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .content__section1--img {
+    @include size(318px, 450px);
+  }
+
+  .content__section2--img {
+    @include size(346px, 474px);
+  }
+  .content__section1--block {
+    margin-left: 120px;
+  }
+  .content__section2--block {
+    margin-right: 120px;
+  }
+  .content__section3--li {
+    width: 248px;
+  }
+  .content__section3--p {
+    width: 248px;
+  }
+  .choice__1--button {
+    width: 240px;
+  }
+  .choice__2--button {
+    width: 260px;
+  }
+}

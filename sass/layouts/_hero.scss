@@ -1,0 +1,42 @@
+.hero {
+  background-color: #fff;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    .hero__textblock {
+      margin-top: 92px;
+    }
+    .hero__title {
+      @include font-props(700, 80px, 77px, #19191b, -2.50105px);
+      width: 462px;
+      margin-bottom: 30px;
+    }
+    .hero__text {
+      font-family: 'Mulish';
+      @include font-props(400, 20px, 30px, #696871, -0.625263px);
+      width: 460px;
+      margin-bottom: 50px;
+    }
+    .hero-buttons {
+      display: flex;
+    }
+
+    .hero__button {
+      @include size(208px, 60px);
+      @include font-props(700, 17px, 22px, #ffffff, -0.531474px);
+      @include button(#5454d4, #5454d4, 10px, 2px, solid);
+      margin-right: 40px;
+    }
+
+    .hero__button2 {
+      background-color: transparent;
+      border: none;
+      line-height: 1;
+    }
+    .hero__img {
+      @include size(610px, 644px);
+    }
+  }
+}

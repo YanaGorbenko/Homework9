@@ -1,0 +1,33 @@
+@mixin font-props($weight, $size, $line-height, $color, $letter-spacing) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height;
+  color: $color;
+  letter-spacing: $letter-spacing;
+}
+
+@mixin button(
+  $background-color,
+  $border-color,
+  $border-radius,
+  $border-width,
+  $border-style
+) {
+  background-color: $background-color;
+  border: $border-width solid $border-color;
+  border-radius: $border-radius;
+  border-style: $border-style;
+  text-align: center;
+  cursor: pointer;
+}
+
+@mixin flex($display, $justify-content, $align-items, $flex-direction) {
+  display: $display;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-direction: $flex-direction;
+}
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
