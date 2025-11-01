@@ -1,0 +1,42 @@
+header {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .header__button {
+      @include size(208px, 56px);
+      @include font-props(700, 17px, 22px, #ffffff, -0.531474px);
+      @include button(#ff7143, #ff7143, 10px, 2px, solid);
+      margin-right: 72px;
+    }
+  }
+  &__logo {
+    margin-right: 174px;
+  }
+  .navigation {
+    margin-right: 160px;
+    &__list {
+      display: flex;
+      column-gap: 50px;
+    }
+    &__link {
+      @include font-props(700, 15px, 20px, #696871, -0.468947px);
+      display: block;
+      padding: 44px 0;
+      &.home {
+        color: #19191b;
+        position: relative;
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 30px;
+          left: 0;
+          width: 42px;
+          height: 2px;
+          background-color: #5454d4;
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.content__section3 {
+  padding-bottom: 150px;
+  &--list {
+    display: flex;
+    column-gap: 74px;
+  }
+  &--h3 {
+    @include font-props(700, 24px, 1.5, #19191b, -0.750316px);
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  &--p {
+    @include font-props(400, 16px, 1.5, #696871, -0.500211px);
+    font-family: 'Mulish';
+    text-align: center;
+    width: 306px;
+  }
+  img {
+    margin: 0 auto;
+    margin-bottom: 8px;
+  }
+}

@@ -1,0 +1,8 @@
+.logos {
+  padding-bottom: 160px;
+  &__list {
+    display: flex;
+    column-gap: 120px;
+    align-items: center;
+  }
+}

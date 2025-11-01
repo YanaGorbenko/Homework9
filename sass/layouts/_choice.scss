@@ -1,0 +1,117 @@
+.choice {
+  padding-bottom: 158px;
+  &__top {
+    display: flex;
+    &--title {
+      @include font-props(700, 60px, 1.17, #19191b, -1.87579px);
+      width: 524px;
+      margin-top: 0;
+      margin-right: 242px;
+      margin-bottom: 82px;
+    }
+  }
+  &__buttons {
+    display: flex;
+    @include button(#f5f5fa, #f5f5fa, 8px, 2px, solid);
+    overflow: hidden;
+    @include size(340px, 66px);
+    align-items: center;
+    list-style: none;
+
+    button {
+      border: none;
+      background: transparent;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+    .year {
+      @include button(#5454d4, #5454d4, 8px, 0, none);
+      @include size(160px, 56px);
+      @include font-props(700, 16px, 21px, #ffffff, -0.500211px);
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    .month {
+      @include button(#f7f7fb, #f7f7fb, 8px, 0, none);
+      @include size(174px, 66px);
+      @include font-props(700, 16px, 21px, #19191b, -0.500211px);
+    }
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 18px;
+  }
+  .choice__1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    width: 330px;
+    padding-top: 34px;
+    padding-bottom: 28px;
+    &--p {
+      @include font-props(400, 18px, 1.56, #696871, -0.562737px);
+      text-align: center;
+      margin-bottom: 22px;
+    }
+    &--h3 {
+      @include font-props(700, 60px, 0.93, #1d293f, -1.03448px);
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 28px;
+    }
+    &--features {
+      font-family: 'Mulish';
+      @include font-props(400, 17px, 2.94, #696871, -0.531474px);
+      text-align: center;
+      margin-bottom: 36px;
+    }
+    &--button {
+      @include button(#ffffff, #eae9f2, 10px, 2px, solid);
+      @include size(286px, 60px);
+      @include font-props(700, 17px, 22px, #5454d4, -0.531474px);
+    }
+  }
+  .choice__2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ff7143;
+    border-radius: 8px;
+    width: 376px;
+    padding-top: 50px;
+    padding-bottom: 44px;
+    &--p {
+      @include font-props(
+        400,
+        18px,
+        1.56,
+        rgba(255, 255, 255, 0.7),
+        -0.562737px
+      );
+      text-align: center;
+      margin-bottom: 22px;
+    }
+    &--h3 {
+      @include font-props(700, 60px, 0.93, #ffffff, -1.03448px);
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 28px;
+    }
+    &--features {
+      font-family: 'Mulish';
+      @include font-props(400, 17px, 2.94, #ffffff, -0.531474px);
+      text-align: center;
+      margin-bottom: 36px;
+    }
+    &--button {
+      @include button(#9f3919, #9f3919, 10px, 2px, solid);
+      @include size(306px, 60px);
+      @include font-props(700, 17px, 22px, #ffffff, -0.531474px);
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.content__section1 {
+  padding-bottom: 84px;
+  .container {
+    display: flex;
+  }
+  &--title {
+    @include font-props(700, 50px, 1.14, #19191b, -1.56316px);
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+  &--block {
+    margin-left: 166px;
+    margin-top: 122px;
+  }
+  &--text {
+    @extend %sections--text;
+  }
+  &--link {
+    @extend %sections--link;
+  }
+  &--img {
+    @include size(348px, 472px);
+  }
+}
