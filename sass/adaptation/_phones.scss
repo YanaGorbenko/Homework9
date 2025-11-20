@@ -1,0 +1,14 @@
+@media (max-width: 576px) {
+  .container {
+    max-width: 576px;
+  }
+
+  .header .container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .header__logo {
+      margin-right: 80px;
+    }
+  }
+}
